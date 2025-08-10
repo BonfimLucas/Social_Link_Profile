@@ -1,25 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    
+}
+
+:root{
+    --background-color: hsl(0, 0%, 8%);
+    --background-main-color: hsl(0, 0%, 12%);
+    --background-btn-color: hsl(0, 0%, 20%);
+    --subtitle-color: hsl(75, 94%, 57%);
+
+    --font: "Inter", sans-serif;
 }
 
 body{
-   background-color: rgb(19, 18, 18);
+   background-color: var(--background-color);
    display: flex;  
    align-items: center;
    justify-content: center;
+   min-height: 100vh;
 }
 
 main{ 
-    margin-top: 10%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(39, 38, 38);
-    border-radius: 15px;
-    padding: 10px;
+    background-color: var(--background-main-color);
+    border-radius: 1em;
+    padding: 0.6em;
 }
 
 ul{
@@ -29,50 +41,50 @@ ul{
     align-items: center;
     list-style: none;
     
-    margin-top: 25px;
-    margin-bottom: 20px;
-    gap: 15px;
+
+    margin: 1.5em 1.5em 1.5em 1.3em;
+    gap: 0.8em;
 }
 
 img{
-    margin-top: 20px;
+    margin-top: 1.3em;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
+    height: 6.2em;
+    width: 6.2em;
+    margin-bottom: 1.3em;
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: var(--font);
     color: white;
     font-size: 1.5em;
 }
 
 h4{
-    color: rgb(158, 225, 57);
-    font-family: sans-serif;
+    color: var(--subtitle-color);
+    font-family:  var(--font);
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0.6em;
     font-size: 0.8em;
 }
 
 p{
-    font-family: sans-serif;
-    color: rgb(171, 167, 167);
+    font-family: var(--font);
+    color: white;
     font-weight: 100;
-    margin-top: 21px;
-    font-size: 1em;
+    margin-top: 1.4em;
+    font-size: 0.8em;
 }
 
 li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(52, 51, 51);
-    width: 21em;
-    height: 2.5em;
+    background-color: var(--background-btn-color);
+    width: 18em;
+    height: 2.6em;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 0.4em;
     cursor: pointer;
     transition: 1s;
 }
@@ -80,21 +92,21 @@ li{
 a{
     text-decoration: none;
     color: rgb(230, 230, 230);
-    font-family: sans-serif;
+    font-family: var(--font);
     font-weight: bold;
     transition: 1s;
-    
 }
 
 
 li:hover{
-    background-color: rgb(179, 177, 177);
+    background-color: var(--subtitle-color);
     transition: 1s;
-    color: black;
+    
 }
 
 li:hover > a{
     transition: 1s;
+    color: var(--background-color);
 }
 
 
